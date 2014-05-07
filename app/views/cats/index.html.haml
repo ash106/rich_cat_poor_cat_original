@@ -1,0 +1,9 @@
+%h1.text-center Listing All Cats
+
+- @cats.each do |cat|
+  %p.text-center
+    = image_tag cat.image.url(:thumb)
+    #{link_to cat.id, cat} #{cat.finances.titleize}
+    #{link_to 'Edit', edit_cat_path(cat)} | #{link_to 'Delete', cat, method: :delete, data: { confirm: "Are you sure?" }}
+
+%p= link_to "Add New Cat", new_cat_path

@@ -1,0 +1,5 @@
+%h1.text-center Profile for #{@cat.id}
+
+%p.text-center= image_tag @cat.image.url(:medium)
+
+%p.text-center Financial Standing: #{@cat.finances.titleize}

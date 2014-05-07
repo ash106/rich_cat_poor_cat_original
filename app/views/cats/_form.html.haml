@@ -1,0 +1,9 @@
+= form_for @cat, html: { multipart: true } do |f|
+  = f.label :finances
+  = f.select :finances, options_for_select(@finances_enum.collect { |s| [s[0].humanize, s[0]] }, selected: @cat.finances), {} , class: "form-control"
+  %br
+  = f.label :image
+  = image_tag @cat.image.url(:thumb)
+  = f.file_field :image
+  %br
+  = f.submit class: "btn btn-primary"
