@@ -21,6 +21,8 @@ gem 'rails_12factor', group: :production
 gem "paperclip", github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
 gem 'figaro'
+gem 'rabl'
+gem 'gon'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

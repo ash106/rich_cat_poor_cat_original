@@ -1,2 +1,11 @@
 %h1.text-center Welcome to Rich Cat/Poor Cat!
 
+#cat-image
+  = image_tag "missing.png"
+
+#buttons.text-center
+  %h2.result-text.win You win!
+  %h2.result-text.lose Nope
+  %button.btn.btn-success.rich{type: "button"} Rich Cat
+  %button.btn.btn-danger.poor{type: "button"} Poor Cat
+  %button.btn.btn-primary.next{type: "button"} Next

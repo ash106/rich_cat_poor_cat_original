@@ -79,3 +79,14 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
+
+#buttons {
+  margin-top: 20px;
+  button {
+    margin: 0 20px;
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+}
