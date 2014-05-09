@@ -2,7 +2,7 @@ class CatsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @cats = Cat.all
+    @cats = Cat.order(:id)
   end
 
   def show
