@@ -2,8 +2,6 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-  $.support.cors = true
-  
   stage = new PIXI.Stage(0xffffff)
 
   renderer = PIXI.autoDetectRenderer(400, 400)
