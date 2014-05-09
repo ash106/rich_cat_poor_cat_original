@@ -34,15 +34,15 @@ $ ->
   for cat in random_cats
     console.log cat.cat.id
   cat = random_cats[count]
-  $("#cat-image img").attr("src", cat.cat.image_url)
-  $("#cat-image img").removeClass().addClass(cat.cat.finances)
+  # $("#cat-image img").attr("src", cat.cat.image_url)
+  # $("#cat-image img").removeClass().addClass(cat.cat.finances)
 
   $("button.rich").click ->
     mySprite.mask = null
     $("button.rich").hide()
     $("button.poor").hide()
     $("button.next").show()
-    if $("img").hasClass("rich")
+    if cat.cat.finances == "rich"
       $(".win").show()
     else
       $(".lose").show()
@@ -51,7 +51,7 @@ $ ->
     $("button.rich").hide()
     $("button.poor").hide()
     $("button.next").show()
-    if $("img").hasClass("poor")
+    if cat.cat.finances == "poor"
       $(".win").show()
     else
       $(".lose").show()
@@ -65,8 +65,8 @@ $ ->
       $("button.next").hide()
       $("button.rich").show()
       $("button.poor").show()
-      $("#cat-image img").attr("src", cat.cat.image_url)
-      $("#cat-image img").removeClass().addClass(cat.cat.finances)
+      # $("#cat-image img").attr("src", cat.cat.image_url)
+      # $("#cat-image img").removeClass().addClass(cat.cat.finances)
     else
       count = 0
       random_cats = shuffle(gon.cats)
@@ -77,8 +77,8 @@ $ ->
       $("button.next").hide()
       $("button.rich").show()
       $("button.poor").show()
-      $("#cat-image img").attr("src", cat.cat.image_url)
-      $("#cat-image img").removeClass().addClass(cat.cat.finances)
+      # $("#cat-image img").attr("src", cat.cat.image_url)
+      # $("#cat-image img").removeClass().addClass(cat.cat.finances)
 
 
 shuffle = (o) -> #v1.0
