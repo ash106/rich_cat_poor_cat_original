@@ -18,6 +18,11 @@
     font-size: 2em;
     margin-bottom: 20px;
   }
+  h2 {
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   #footer {
     position: absolute;
     bottom: 0;
@@ -33,7 +38,6 @@
 @media screen and (min-width: 660px) {
   main {
     margin-top: 51px; // accommodate the navbar
-    padding-bottom: 60px;
   }
   body {
     // background: #9d3d46;

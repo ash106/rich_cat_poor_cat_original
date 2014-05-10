@@ -82,7 +82,7 @@ section {
 }
 
 #buttons {
-  margin-top: 20px;
+  margin-top: 10px;
   button {
     margin: 0 20px;
   }
@@ -92,6 +92,11 @@ h1 {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 1.50em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 10px;
 }
 
 canvas {
@@ -125,6 +130,6 @@ body {
 }
 
 canvas {
-  width: 320px;
-  height: 320px;
+  width: 250px;
+  height: 250px;
 }
