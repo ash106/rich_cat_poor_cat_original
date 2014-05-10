@@ -35,10 +35,10 @@ img {
 main {
   @extend .container;
   // background-color: #eee;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
-  margin-bottom: 60px;
+  margin-top: 10px; // accommodate the navbar
+  margin-bottom: 40px;
   }
 section {
   @extend .row;
@@ -90,7 +90,8 @@ section {
 
 h1 {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 1.50em;
 }
 
 canvas {
@@ -107,10 +108,23 @@ html {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 40px;
   // background-color: #f5f5f5;
   p {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 }
 
+body {
+  // background: #605d6a;
+}
+
+.container, main {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+canvas {
+  width: 320px;
+  height: 320px;
+}

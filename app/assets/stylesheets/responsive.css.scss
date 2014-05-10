@@ -1,0 +1,44 @@
+@media screen and (min-width: 480px) {
+  canvas {
+    width: 400px;
+    height: 400px;
+  }
+  main {
+    margin-top: 20px; // accommodate the navbar
+    margin-bottom: 60px;
+  }
+  body {
+    // background: #3b819d;
+  }
+  .container, main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    // background-color: #f5f5f5;
+    p {
+      margin: 20px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 660px) {
+  main {
+    margin-top: 51px; // accommodate the navbar
+    padding-bottom: 60px;
+  }
+  body {
+    // background: #9d3d46;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+}
