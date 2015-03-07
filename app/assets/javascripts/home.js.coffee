@@ -18,7 +18,7 @@ $ ->
   count = 0
   $(".result-text").hide()
   $("button.next").hide()
-  random_cats = shuffle(gon.cats)
+  random_cats = _.shuffle(gon.cats)
   # for cat in random_cats
   #   console.log cat.cat.id
   cat = random_cats[count]
@@ -94,16 +94,3 @@ $ ->
       $("button.poor").show()
       # $("#cat-image img").attr("src", cat.cat.image_url)
       # $("#cat-image img").removeClass().addClass(cat.cat.finances)
-
-
-shuffle = (o) -> #v1.0
-  j = undefined
-  x = undefined
-  i = o.length
-
-  while i
-    j = Math.floor(Math.random() * i)
-    x = o[--i]
-    o[i] = o[j]
-    o[j] = x
-  o
