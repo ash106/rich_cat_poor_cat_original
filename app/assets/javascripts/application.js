@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap
 //= require pixi
+//= require underscore-min
 //= require_tree .
